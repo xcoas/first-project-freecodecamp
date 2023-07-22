@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
+    
+</head>
+<body>
+    <div class="imagge"></div>
+<div class="container">
+    <h1 id="title" class="title1">My blog Survey</h1>
+    <p id="description">This is survey about travelling</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"> Your name: <input class="first" required placeholder="Input Your name" id="name" type="text"></label>
+        <label for="email" id="email-label">Your email: <input class="first" required placeholder="Input Your email" id="email" type="email"></label>
+        <label for="number" id="number-label">Your age: <input class="first" required placeholder="Input Your age" id="number" type="number" min="14" max="100"</label>
+      </fieldset>
+      <fieldset>
+        <label>How did you get here? <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Post on twitter</option>
+            <option value="2">My Friend</option>
+            <option value="3">Google Ads</option>
+            <option value="4">Other</option>
+        </select></label>
+        <label for="what">What kind of stuff you want to see the most? <textarea id="what" name="what" rows="1" cols="30" value="what" placeholder="Type..."></textarea></label>
+        </fieldset>
+        <fieldset>
+        <label>What type of content most attracts your attention on my blog? </label>
+            <label for="10"><input type="radio" id="10" name="question" value="10"> Travel and adventure stories</label>
+            <label for="11"><input type="radio" id="11" name="question" value="11"> Tips on a healthy lifestyle</label>
+            <label for="12"><input type="radio" id="12" name="question" value="12"> Inspiring posts about personal development</label>
+            <label for="13"><input type="radio" id="13" name="question" value="13"> Other</label>
+        </fieldset>
+        <fieldset>
+        <label>How do you usually discover new content on my blog? </label>
+            <label for="check1"><input type="checkbox" id="check1" name="check1" value="check1"> Through search engines (e.g., Google)</label>
+            <label for="check2"><input type="checkbox" id="check2" name="check2" value="check2"> Social media posts and shares</label>
+            <label for="check3"><input type="checkbox" id="check3" name="check3" value="check3"> Email newsletters</label>
+            <label for="check4"><input type="checkbox" id="check4" name="check4" value="check4"> Other</label>
+        </fieldset>
+        <button id="submit" class="submit" type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
