@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+    <title>Technical documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Technical Documentation</header>
+        <ul>
+            <a class="nav-link" href="#Headings">
+                <li>Headings</li>
+            </a>
+            <a class="nav-link" href="#Paragraphs">
+                <li>Paragraphs</li>
+            </a>
+            <a class="nav-link" href="#Buttons">
+                <li>Buttons</li>
+            </a>
+            <a class="nav-link" href="#Unordered_and_Ordered_Lists">
+                <li>Unordered and Ordered Lists</li>
+            </a>
+            <a class="nav-link" href="#Formatted_Text">
+                <li>Formatted Text</li>
+            </a>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Headings">
+            <header>Headings</header>
+            <h2>  &lt; h1 &gt; , &lt; h2 &gt;, ..., &lt; h6 &gt;</h2>
+            <p>These elements are used to create a hierarchy of titles and headings on a webpage. &lt; h1 &gt; represents the most important title, while &lt; h6 &gt; represents the least important.</p>
+            <p>Headers visual prominence can be achieved through variations in font size and weight. Generally, &lt; h1 &gt; headers are rendered with the largest font size and the boldest weight, making them stand out as the main title of the page. As you move down the hierarchy, each subsequent header level might have slightly smaller font sizes and less bold weight. This visual progression helps users quickly identify the relative importance of different sections.</p>
+            <code class="code-box">
+                <p class="code-box-text">&lt;h1&gt; The Biggest &lt;/h3&gt; </p>
+                <p class="code-box-text">&lt;h2&gt; Key Principles &lt;/h2&gt; </p>
+                <p class="code-box-text">&lt;h3&gt; Online Status &lt;/h3&gt; </p>
+                <p class="code-box-text">&lt;h4&gt; Headphones &lt;/h3&gt; </p>
+            </code>
+        </section>
+        <section class="main-section" id="Paragraphs">
+            <header>Paragraphs</header>
+            <h2> &lt; p &gt;</h2>
+            <p>Paragraphs are used to group together related sentences and create distinct blocks of text. They provide a natural separation between content and enhance readability.</p>
+            <p>The use of &lt; p &gt; elements contributes to the semantic structure of your HTML document. It helps browsers and assistive technologies understand the organization of your content, enhancing accessibility for users, including those who rely on screen readers.</p>
+            <code class="code-box-2">
+                <p class="code-box-text">&lt;p&gt; Paragraph &lt;/p&gt; </p>
+            </code>
+        </section>
+        <section class="main-section" id="Buttons">
+            <header>Buttons</header>
+            <h2> &lt; Input &gt;</h2>
+            <p>The primary content of a button is typically the text that appears on the button face. This text should provide a clear indication of the action the button will perform when clicked.</p>
+            <li>The type attribute specifies the type of button. Common values are "button" (default), "submit" (for form submission), and "reset" (to reset form fields).</li>
+            <li>The disabled attribute can be added to make the button unclickable and visually indicate that the action is unavailable.</li>
+            <li>The name attribute is often used when buttons are part of a form and are used to submit data.</li>
+            <li>You can use JavaScript to add custom functionality to buttons, making them perform specific tasks when clicked.</li>
+            <p>Proper use of the button element enhances accessibility for users who rely on assistive technologies. Screen readers, for example, interpret buttons correctly, and users can activate them using keyboard navigation.</p>
+            <div class="button-area">
+                <p class="buttons">Textarea <input></input></p>
+                <p class="buttons">Radio Button <input type="radio"></input></p>
+                <p class="buttons">Checkbox <input type="checkbox"></input></p>
+                <p class="buttons">Submit <input type="Submit"></input></p>
+            </div>
+            <code class="code-box">
+                <p class="code-box-text">&lt;Input&gt; textplace &lt;/Input&gt; </p>
+                <p class="code-box-text">&lt;Input type="Radio"&gt; Circrular Button &lt;/Input&gt; </p>
+                <p class="code-box-text">&lt;Input type="Checkbox"&gt; Checkbox &lt;/Input&gt; </p>
+                <p class="code-box-text">&lt;Input type="Submit"&gt; Submit &lt;/Submit&gt; </p>
+            </code>
+        </section>
+        <section class="main-section" id="Unordered_and_Ordered_Lists">
+            <header>Unordered and Ordered Lists</header>
+            <h2> Unordered List &lt; ul &gt; </h2>
+            <p> An unordered list is used to create a list of items with bullet points. It is ideal for presenting information that doesn't require a specific order.</p>
+            <p> Within the &lt; ul &gt; element, each list item is represented by the &lt; li &gt; element. This element contains the content of each list item.</p>
+            <code class="code-box-3">
+                <p class="code-box-text ul-list">&lt;ul&gt;</p>
+                <p class="code-box-text list ul-list">&lt;li&gt; Item1 &lt;/li&gt;</p>
+                <p class="code-box-text list ul-list">&lt;li&gt; Item2 &lt;/li&gt;</p>
+                <p class="code-box-text ul-list">&lt;/ul&gt;</p>
+            </code>
+            <h2> Ordered List &lt; ol &gt; </h2>
+            <code class="code-box">
+                <p class="code-box-text">&lt;h1&gt; The Biggest &lt;/h3&gt; </p>
+                <p class="code-box-text">&lt;h2&gt; Key Principles &lt;/h2&gt; </p>
+                <p class="code-box-text">&lt;h3&gt; Online Status &lt;/h3&gt; </p>
+                <p class="code-box-text">&lt;h4&gt; Headphones &lt;/h3&gt; </p>
+            </code>
+        </section>
+        <section class="main-section" id="Formatted_Text">
+            <header>Formatted Text</header>
+            <h2> &lt; i &gt; , &lt; b &gt; , &lt; u &gt; , &lt; strong &gt;</h2>
+            <li>&lt; i &gt; : Represents text in italic or emphasized style. It's typically used to convey that the text has a different emphasis or meaning.</li>
+            <li>&lt; b &gt; : Represents text in bold style. It's used to make the text visually stand out, often for keywords or important content.</li>
+            <li>&lt; u &gt; : Represents underlined text. While not recommended for general use due to its association with hyperlinks, it can be used to indicate text needing special attention.</li>
+            <li>&lt; strong &gt; : Represents strongly emphasized text. It's similar to &lt; b &gt; , but it carries a semantic meaning of higher importance, often used for critical content.</li>
+            <code class="code-box">
+                <p class="code-box-text">&lt;i&gt; Italic text &lt;/i&gt; </p>
+                <p class="code-box-text">&lt;b&gt; bold text &lt;/b&gt; </p>
+                <p class="code-box-text">&lt;u&gt; Underlined text &lt;/u&gt; </p>
+                <p class="code-box-text">&lt;strong&gt; Strongly emphasized text &lt;/strong&gt; </p>
+            </code>
+        </section>
+        
+    </main>
+</body>
+</html>
